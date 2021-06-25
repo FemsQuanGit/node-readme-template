@@ -1,0 +1,31 @@
+{
+  "name": "node-readme-template",
+  "version": "1.0.0",
+  "description": "A tool to generate README.md files automatically.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "readme": "bin/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FemsQuanGit/node-readme-template.git"
+  },
+  "keywords": [
+    "node",
+    "readme",
+    "cli"
+  ],
+  "author": "chuanquan.zheng",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.1",
+    "fs": "0.0.1-security",
+    "inquirer": "^8.1.1",
+    "ora": "^5.4.1",
+    "path": "^0.12.7"
+  }
+}
