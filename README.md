@@ -37,7 +37,7 @@
 |包名|版本|license|功能概要|
 |:--|:--|:--|:--|
 |[chalk](https://www.npmjs.com/package/chalk)|^4.1.1|MIT|命令行美化插件|
-|[fs](https://www.npmjs.com/package/fs)|0.0.1-security|MIT|node文件系统模块|
+|[fs](https://www.npmjs.com/package/fs)|0.0.1-security|ISC|node文件系统模块|
 |[inquirer](https://www.npmjs.com/package/inquirer)|^8.1.1|MIT|命令行插件|
 |[ora](https://www.npmjs.com/package/ora)|^5.4.1|MIT|加载转轮插件|
 |[path](https://www.npmjs.com/package/path)|^0.12.7|MIT|node路径处理插件|
