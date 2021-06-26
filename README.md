@@ -9,13 +9,13 @@
 │   ├── index               # node 脚本入口文件
 ├── config                  # 相关配置文件目录
 │   ├── index.js            # 配置主文件
-│   ├── readme.js           # readme 文件配置相关
 ├── index.js                # 项目入口文件
 ├── LICENSE                 # 授权说明
 ├── package.json            # 包描述文件
 ├── README.md               # 项目说明文件
 ├── utils                   # 工具包目录
 │   ├── commandLine.js      # 命令行相关
+│   ├── readme.js           # readme 配置相关
 ```
 ## 项目安装运行
 
