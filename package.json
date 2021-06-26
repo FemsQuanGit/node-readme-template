@@ -1,6 +1,6 @@
 {
   "name": "node-readme-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool to generate README.md files automatically.",
   "main": "index.js",
   "scripts": {
