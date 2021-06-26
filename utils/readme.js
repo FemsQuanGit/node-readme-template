@@ -87,13 +87,13 @@ module.exports = {
     const { package, introduction, tree, config, run, dependencies, attention, version, license, keyword, contribution } = options
     // 包名
     let templateStr = `# ${package}\n`
-    templateStr += `---\n`
+    templateStr += `\n`
     // 包描述
     templateStr += `&emsp;&emsp; ${introduction}\n`
     // 项目结构
     if (tree) {
       templateStr += `## 项目结构\n`
-      templateStr += `---\n`
+      templateStr += `\n`
       templateStr += "```javascript\n"
       const treeStr = readDirTreeSync(path)
       templateStr += `${treeStr}`
@@ -102,7 +102,7 @@ module.exports = {
     // 环境配置说明
     if (config) {
       templateStr += `## 环境配置说明\n`
-      templateStr += `---\n`
+      templateStr += `\n`
       templateStr += `- index.js<br/>基本配置文件。\n`
       templateStr += `- dev.env.js<br/>开发环境配置文件。\n`
       templateStr += `- test.env.js<br/>测试环境配置文件。\n`
@@ -112,7 +112,7 @@ module.exports = {
     // 项目安装运行
     if (run) {
       templateStr += `## 项目安装运行\n`
-      templateStr += `---\n`
+      templateStr += `\n`
       templateStr += `- 开发环境运行步骤\n`
       templateStr += `  - 步骤一\n`
       templateStr += `  - 步骤二\n`
@@ -121,7 +121,7 @@ module.exports = {
     // 依赖包说明
     if (dependencies) {
       templateStr += `## 依赖包说明\n`
-      templateStr += `---\n`
+      templateStr += `\n`
       const obj = require(`${path}\\package.json`).dependencies || {}
       if (Object.keys(obj).length > 0) {
         templateStr += `|包名|版本|license|功能概要|\n`
@@ -134,14 +134,14 @@ module.exports = {
     // 注意事项
     if (attention) {
       templateStr += `## 常见问题说明\n`
-      templateStr += `---\n`
+      templateStr += `\n`
       templateStr += `- **Q**：遇到比较坑的问题？\n`
       templateStr += `  - **A**：这个问题应该这样处理。\n`
     }
     // 版本变更日志
     if (version) {
       templateStr += `## 版本变更日志\n`
-      templateStr += `---\n`
+      templateStr += `\n`
       templateStr += `#### V2.0.0(某年某月某日)\n`
       templateStr += `- 【某个模块】某个部分\n`
       templateStr += `  - 这儿做了点修改\n`
@@ -154,7 +154,7 @@ module.exports = {
     // 授权说明
     if (license) {
       templateStr += `## License\n`
-      templateStr += `---\n`
+      templateStr += `\n`
       if (fs.existsSync(`${path}\\LICENSE`)) {
         const text = fs.readFileSync(`${path}\\LICENSE`,'utf-8')
         templateStr += `${text.toString()}\n`
@@ -163,7 +163,7 @@ module.exports = {
     // 关键词
     if (keyword) {
       templateStr += `## 关键词\n`
-      templateStr += `---\n`
+      templateStr += `\n`
       const keywords = require(`${path}\\package.json`).keywords
       if (keywords && keywords.length > 0) {
         keywords.forEach(el => {
@@ -175,7 +175,7 @@ module.exports = {
     // 源码贡献者
     if (contribution) {
       templateStr += `## 源码贡献者\n`
-      templateStr += `---\n`
+      templateStr += `\n`
       templateStr += `- 贡献者1 <guanliyuan@qq.com>【管理员】\n`
       templateStr += `- 贡献者2 <gongxianzhe@qq.com>\n`
     }
