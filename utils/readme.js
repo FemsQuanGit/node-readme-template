@@ -12,13 +12,13 @@ module.exports = {
         type: "input",
         name: "package",
         message: "请输入项目名称",
-        default: package.name,
+        default: package.name || '在这里修改项目名称',
       },
       {
         type: "input",
         name: "introduction",
         message: "请输入项目简介",
-        default: package.description,
+        default: package.description || '在这里修改项目简介',
       },
       {
         type: "confirm",

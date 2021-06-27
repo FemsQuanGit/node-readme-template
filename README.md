@@ -37,8 +37,9 @@
 |包名|版本|license|功能概要|
 |:--|:--|:--|:--|
 |[chalk](https://www.npmjs.com/package/chalk)|^4.1.1|MIT|命令行美化插件|
+|[commander](https://www.npmjs.com/package/commander)|^8.0.0|MIT|命令行插件，用于命令及其参数配置|
 |[fs](https://www.npmjs.com/package/fs)|0.0.1-security|ISC|node文件系统模块|
-|[inquirer](https://www.npmjs.com/package/inquirer)|^8.1.1|MIT|命令行插件|
+|[inquirer](https://www.npmjs.com/package/inquirer)|^8.1.1|MIT|命令行插件，用于用户交互|
 |[ora](https://www.npmjs.com/package/ora)|^5.4.1|MIT|加载转轮插件|
 |[path](https://www.npmjs.com/package/path)|^0.12.7|MIT|node路径处理插件|
 ## 常见问题说明
@@ -47,8 +48,16 @@
   - **A**：可使用`npm init`初始化包，生成package.json文件，为了项目更加完整、规范，尽量填写所有项。之后再运行`readme`命令，即可生成README.md文件。
 ## 版本变更日志
 
+#### V1.0.2(2021/06/27)
+- 新增命令参数
+  - `readme`,普通运行，需要用户选择配置项
+  - `readme -y`或`readme --yes`,全部选择默认配置项
+  - `readme -v`或`readme --version`,查看当前工具的版本
+  - `readme -h`或`readme --help`,查看命令帮助
+#### V1.0.1(2021/06/26)
+- 修复部分bug
 #### V1.0.0(2021/06/26)
-- 【README.md】模板cli工具基本完成
+- 基本功能完成
   - 根据package.json文件初始化配置选项
   - 根据用户自定义选择配置项生成模板文档
 ## License
